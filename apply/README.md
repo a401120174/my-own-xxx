@@ -5,7 +5,7 @@ Javascript apply 實作學習心得 <br>
 https://www.mdeditor.tw/pl/pS2y/<br>
 https://juejin.cn/post/6844903809206976520#heading-6
 
-# 實作介紹
+### 實作介紹
 
 根據 MDN 對於 Function.prototype.apply() 的描述
 
@@ -28,7 +28,7 @@ console.log(min);
 
 ```
 
-# 實作步驟
+### 實作步驟
 
 -  為 apply function 的第一個參數加上 key fn: this(調用 apply 的 function)
 -  取得第二個參數 otherArg

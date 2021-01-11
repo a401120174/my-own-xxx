@@ -5,7 +5,7 @@ Javascript bind 實作學習心得 <br>
 https://blog.usejournal.com/implement-your-own-call-apply-and-bind-method-in-javascript-42cc85dba1b<br>
 https://juejin.cn/post/6844903809206976520#heading-10
 
-# 實作介紹
+### 實作介紹
 
 根據 MDN 對於 Function.prototype.bind() 的描述
 
@@ -30,7 +30,7 @@ console.log(boundGetX());
 
 ```
 
-# 實作步驟
+### 實作步驟
 
 -  取得調用 bind 的 function : fn
 -  取得第一個參數後的其餘參數 otherArg

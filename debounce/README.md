@@ -5,7 +5,7 @@ Javascript debounce 實作學習心得 <br>
 https://lodash.com/docs/#debounce<br>
 https://juejin.cn/post/6844903809206976520#heading-6
 
-# 實作介紹
+### 實作介紹
 
 根據 lodash 對於 debounced function 的描述
 
@@ -33,7 +33,7 @@ jQuery(window).on('popstate', debounced.cancel);
 
 ```
 
-# 實作步驟
+### 實作步驟
 
 -  建立一個 timer 變數
 -  建立一個 function

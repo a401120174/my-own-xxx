@@ -5,7 +5,7 @@ Javascript instanceof 運算子實作學習心得 <br>
 https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/javascript-instanceof-operator-implementation-ee8f40f9e3b6 <br>
 https://2ality.com/2014/01/new-operator.html <br>
 
-# 實作介紹
+### 實作介紹
 
 根據 MDN 對於 operator 運算子的描述
 
@@ -28,7 +28,7 @@ console.log(auto instanceof Object);
 // expected output: true
 ```
 
-# 實作步驟
+### 實作步驟
 
 -  用 Object.getPrototypeOf 一層一層往上找 , 若有嚴格相等 constructor.prototype 則 return true
 -  若找到 Object.prototype ( 值會是 null ), 則結束迴圈, return false

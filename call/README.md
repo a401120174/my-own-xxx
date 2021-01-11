@@ -4,7 +4,7 @@ Javascript call 實作學習心得 <br>
 參考資料: <br>
 https://www.mdeditor.tw/pl/pS2y/
 
-# 實作介紹
+### 實作介紹
 
 根據 MDN 對於 Function.prototype.call() 的描述
 
@@ -27,7 +27,7 @@ console.log(new Food('cheese', 5).name);
 // expected output: "cheese"
 ```
 
-# 實作步驟
+### 實作步驟
 
 -  為 call function 的第一個參數加上 key fn: this(調用 call 的 function)
 -  取得第一個參數後的其餘參數 otherArg
