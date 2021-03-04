@@ -26,6 +26,7 @@ class Promise {
 
    then(onFulfilled, onRejected) {
       const promise2 = new Promise((resolve, reject) => {
+         // 處理onFulfilled onRejected 不是 function　的情況(被 resolve 或 reject 的值會傳到下一次的 then() 中)
          if (this[STATE] === FULFILLED && typeof onFulfilled !== "function") {
             resolve(this[VALUE]);
          } else if (this[STATE] === REJECTED && typeof onRejected !== "function") {
