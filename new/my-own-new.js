@@ -1,6 +1,6 @@
 function _new(constructor, ...args) {
-   const obj = {};
-   obj.__proto__ = constructor.prototype;
+   // obj.__proto__ = constructor.prototype;
+   const obj = Object.create(constructor.prototype);
 
    const res = constructor.apply(obj, args);
 
